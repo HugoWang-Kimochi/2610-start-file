@@ -1,3 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1014)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(43.75,0,0,43.75,150,150)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#666" viewBox="0 0 16 16">
-  <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8m5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707z"></path>
-</svg></svg></g></g><defs><clipPath id="SvgjsClipPath1014"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs></svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><g clip-path="url(#SvgjsClipPath1044)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(14.0625,0,0,14.0625,50,50)"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logo-title" width="64" height="64"><title id="logo-title">Seattle Getaway logo</title><circle cx="32" cy="32" r="30" fill="#075985"></circle><path fill="#ffffff" d="
+      M30.5 13
+      H33.5
+      L34.5 27
+      L42.5 30
+      L41.5 33.5
+      L34.5 32
+      L37 45
+      H27
+      L29.5 32
+      L22.5 33.5
+      L21.5 30
+      L29.5 27
+      Z
+    "></path><path fill="#99f6e4" d="
+      M13 45
+      C20 40 25 40 32 45
+      C39 40 45 40 51 45
+      V51
+      C45 46 39 46 32 51
+      C25 46 20 46 13 51
+      Z
+    "></path></svg></g></g><defs><clipPath id="SvgjsClipPath1044"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs></svg>

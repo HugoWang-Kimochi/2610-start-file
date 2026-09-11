@@ -423,6 +423,39 @@ h1 {
   margin-left: 10px;
 }
 
+h2 {
+  margin: 2rem 10px 0.5rem;
+  color: #d50000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+main > p {
+  margin: 0 10px;
+  color: lab(27% 0 0);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/************************** Hero LAYOUT **************************/
+.hero {
+  position: relative;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero span {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  padding: 0.8rem;
+  font-weight: 500;
+  font-size: clamp(1.2rem, 6vw, 3rem);
+}
+
 /************************** SOCIAL MEDIA **************************/
 .social {
   display: flex;
@@ -470,5 +503,14 @@ footer p {
   footer {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  /************************** HERO LAYOUT **************************/
+  .hero {
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0 10px;
+    display: block;
+    border: solid 1px lab(85% 0 0);
+    box-shadow: 1px 1px 6px lab(85% 0 0);
   }
 }

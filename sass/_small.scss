@@ -43,8 +43,39 @@ h1 {
   margin-left: $gutter;
 }
 
+h2 {
+  margin: 2rem $gutter 0.5rem;
+  color: $color-primary;
+  font-size: 1.4rem;
+  font-weight: $font-weight-heavy;
+}
 
+main > p {
+  margin: 0 $gutter;
+  color: $color-grey-70;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
+/************************** Hero LAYOUT **************************/
+.hero {
+  position: relative;
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  span{
+    position: absolute;
+    bottom: 0;
+    background-color: $color-trans-w70;
+    width: 100%;
+    padding: .8rem;
+    font-weight: $font-weight-heavy;
+    font-size: clamp(1.2rem, 6vw, 3rem);
+    
+  }
+}
 
 
 
