@@ -47,8 +47,8 @@
   border-bottom: 1px solid $color-grey-20;
   transition: background-color .3s ease;
   &:hover {
-    background-color: $color-grey-80;
-    color:$color-grey-10;
+    background-color: $color-secondary;
+    color:$color-primary;
   }
 }
 

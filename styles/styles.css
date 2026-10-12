@@ -356,12 +356,12 @@ template {
   transition: background-color 0.3s ease;
 }
 .site-nav a:hover {
-  background-color: lab(15% 0 0);
-  color: lab(97% 0 0);
+  background-color: #B7CDBF;
+  color: #075985;
 }
 
 .active > a {
-  color: #d50000;
+  color: #075985;
 }
 
 /************************** IMPORT VARIABLES **************************/
@@ -412,20 +412,20 @@ header img {
 }
 header span {
   font-size: 1.2rem;
-  color: lab(15% 0 0);
+  color: #075985;
 }
 
 /************************** MAIN LAYOUT **************************/
 h1 {
   font-size: 1.5rem;
-  color: lab(34% 0 0);
+  color: #075985;
   font-weight: 500;
   margin-left: 10px;
 }
 
 h2 {
   margin: 2rem 10px 0.5rem;
-  color: #d50000;
+  color: #075985;
   font-size: 1.4rem;
   font-weight: 500;
 }
