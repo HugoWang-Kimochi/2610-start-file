@@ -362,6 +362,7 @@ template {
 
 .active > a {
   color: #075985;
+  font-weight: 500;
 }
 
 /************************** IMPORT VARIABLES **************************/
@@ -391,6 +392,7 @@ template {
 /************************** BODY **************************/
 body {
   font-family: "Inter", sans-serif;
+  background-color: #F3F5F4;
   margin: 0;
   padding: 0;
 }
@@ -416,17 +418,26 @@ header span {
 }
 
 /************************** MAIN LAYOUT **************************/
-h1 {
+main > h1 {
   font-size: 1.5rem;
   color: #075985;
   font-weight: 500;
   margin-left: 10px;
 }
 
-h2 {
+main > h2 {
   margin: 2rem 10px 0.5rem;
   color: #075985;
   font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #B7CDBF;
+}
+
+main > h3 {
+  margin: 1.5rem 10px 0.5rem;
+  color: lab(34% 0 0);
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -435,6 +446,25 @@ main > p {
   color: lab(27% 0 0);
   font-size: 1rem;
   line-height: 1.6;
+}
+
+main > ul {
+  margin: 1rem 10px 1.5rem;
+  padding-left: 1.5rem;
+  color: lab(27% 0 0);
+}
+main > ul li {
+  padding-left: 0.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+main > ul li::marker {
+  content: "✓ ";
+  color: #075985;
+}
+main > ul strong {
+  color: #075985;
+  font-weight: 500;
 }
 
 /************************** Hero LAYOUT **************************/
@@ -450,6 +480,7 @@ main > p {
   position: absolute;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.7);
+  color: #075985;
   width: 100%;
   padding: 0.8rem;
   font-weight: 500;
@@ -459,7 +490,9 @@ main > p {
 /************************** SOCIAL MEDIA **************************/
 .social {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
   column-gap: 5px;
   margin-bottom: 1rem;
 }
@@ -468,6 +501,9 @@ main > p {
   width: 22px;
   height: 22px;
 }
+.social h2 {
+  flex-basis: 100%;
+}
 .social a {
   width: 44px;
   height: 44px;
@@ -475,24 +511,50 @@ main > p {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: white;
   transition: background-color 0.3s ease-in-out;
 }
 .social a:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #B7CDBF;
 }
 
 /************************** FOOTER **************************/
 footer {
-  background-color: lab(15% 0 0);
-  color: lab(98% 0 0);
-  text-align: center;
-  padding: 1rem 0;
+  background-color: #075985;
+  color: white;
+  text-align: left;
+  padding: 2rem 10px 0;
+}
+footer .footer-content {
+  display: grid;
+  gap: 1.5rem;
+}
+footer h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+}
+footer address {
+  font-style: normal;
+  line-height: 1.6;
+}
+footer a {
+  color: white;
+  overflow-wrap: anywhere;
 }
 footer p {
-  margin: 0.25rem;
-  font-size: 0.8rem;
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
   font-weight: 300;
+  line-height: 1.6;
+}
+footer > p {
+  margin: 1.5rem -10px 0;
+  padding: 1rem 10px;
+  background-color: lab(91% 0 0);
+  color: lab(27% 0 0);
+  text-align: center;
 }
 
 /************************** IMPORT VARIABLES **************************/
@@ -512,5 +574,9 @@ footer p {
     display: block;
     border: solid 1px lab(85% 0 0);
     box-shadow: 1px 1px 6px lab(85% 0 0);
+  }
+  footer .footer-content {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
   }
 }

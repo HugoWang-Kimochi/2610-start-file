@@ -54,6 +54,7 @@
 
 
 //Style the current menu item
-.active>a {
+.active > a {
   color: $color-primary;
+  font-weight: $font-weight-heavy;
 }

@@ -9,6 +9,7 @@
 /************************** BODY **************************/
 body {
   font-family: $font-family;
+  background-color: $color-background;
   @include reset;
 }
 
@@ -36,44 +37,78 @@ header {
 
 
 /************************** MAIN LAYOUT **************************/
-h1 {
+main>h1 {
   font-size: 1.5rem;
   color: $color-primary;
   font-weight: $font-weight-heavy;
   margin-left: $gutter;
 }
 
-h2 {
+main>h2 {
   margin: 2rem $gutter 0.5rem;
   color: $color-primary;
   font-size: 1.4rem;
   font-weight: $font-weight-heavy;
+  padding-bottom: 0.5rem;
+border-bottom: 2px solid $color-secondary;
 }
 
-main > p {
+main>h3 {
+  margin: 1.5rem $gutter 0.5rem;
+  color: $color-grey-60;
+  font-size: 1.2rem;
+  font-weight: $font-weight-heavy;
+}
+
+main>p {
   margin: 0 $gutter;
   color: $color-grey-70;
   font-size: 1rem;
   line-height: 1.6;
 }
 
+main>ul {
+  margin: 1rem $gutter 1.5rem;
+  padding-left: 1.5rem;
+  color: $color-grey-70;
+
+  li {
+    padding-left: 0.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+  }
+
+  li::marker {
+    content: "✓ ";
+    color: $color-primary;
+  }
+
+  strong {
+    color: $color-primary;
+    font-weight: $font-weight-heavy;
+  }
+}
+
 /************************** Hero LAYOUT **************************/
 .hero {
   position: relative;
-  img{
+
+  img {
     display: block;
     width: 100%;
     height: auto;
   }
-  span{
+
+  span {
     position: absolute;
     bottom: 0;
     background-color: $color-trans-w70;
+    color: $color-primary;
     width: 100%;
     padding: .8rem;
     font-weight: $font-weight-heavy;
     font-size: clamp(1.2rem, 6vw, 3rem);
-    
+
   }
 }
 
@@ -83,7 +118,9 @@ main > p {
 /************************** SOCIAL MEDIA **************************/
 .social {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: .5rem;
   column-gap: 5px;
   margin-bottom: 1rem;
 
@@ -93,6 +130,10 @@ main > p {
     height: 22px;
   }
 
+  h2 {
+    flex-basis: 100%;
+  }
+
   a {
     width: 44px;
     height: 44px;
@@ -100,26 +141,57 @@ main > p {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    background-color: $color-trans-w70;
+    background-color: $color-white;
     transition: background-color .3s ease-in-out;
   }
 
   a:hover {
-    background-color: $color-trans-w90;
+    background-color: $color-secondary;
   }
 }
 
 
 /************************** FOOTER **************************/
 footer {
-  background-color: $color-grey-80;
-  color: $color-grey-05;
-  text-align: center;
-  padding: 1rem 0;
+  background-color: $color-primary;
+  color: $color-white;
+  text-align: left;
+  padding: 2rem $gutter 0;
+
+  .footer-content {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  h2 {
+    margin: 0 0 0.75rem;
+    font-size: 1.1rem;
+    font-weight: $font-weight-heavy;
+    color: $color-white;
+  }
+
+  address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  a {
+    color: $color-white;
+    overflow-wrap: anywhere;
+  }
 
   p {
-    margin: 0.25rem;
-    font-size: 0.8rem;
-    font-weight: 300;
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    font-weight: $font-weight-normal;
+    line-height: 1.6;
+  }
+
+  >p {
+    margin: 1.5rem (-$gutter) 0;
+    padding: 1rem $gutter;
+    background-color: $color-grey-20;
+    color: $color-grey-70;
+    text-align: center;
   }
 }

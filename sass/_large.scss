@@ -19,4 +19,9 @@
     @include img-shadow-1;
   }
 
+  footer .footer-content {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+
 } // end media query
